@@ -22,9 +22,9 @@ pip3 install random
 3.If you choose the option 1, again you will get the options like below.
 
     Enter your choice here : 1
-    Enter the first image name : 1st_image.jpeg
-    Enter the image name for hide : 2nd_image.jpeg
-    Given image encoded successfully and the image saved as hidden.png!!!
+    Enter the first image file : 1st_image.jpeg
+    Enter the image file for hide : 2nd_image.jpeg
+    Given image encoded successfully and saved as hidden.png!!!
   
 4.Here, you can see the image has been encoded and saved as 'hidden.png'.
 
@@ -32,7 +32,7 @@ pip3 install random
 
     Enter your choice here : 2
     Enter the image for decode : hidden.png
-    Your image decoded successfully, the image encrypted from  hidden.png  and saved as saved.png!!!
+    Your image decoded successfully from hidden.png  and saved as saved.png!!!
   
 6.Here, you can see image has been decoded and saved as 'saved.png'.
 
