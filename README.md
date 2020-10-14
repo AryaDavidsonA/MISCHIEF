@@ -4,9 +4,9 @@ What I have done here is a process of hiding another image within an image. For 
 Here in this process ,the widely supported JPEG images are converted to PNG format. Also, check the requirment.txt for needed modules.
 
 ## Requirment
-pip3 install cv2
-pip3 install numpy
-pip3 install random
+    pip3 install cv2
+    pip3 install numpy
+    pip3 install random
 (Install the above libraries for code execution.)
 
 ## Usage
