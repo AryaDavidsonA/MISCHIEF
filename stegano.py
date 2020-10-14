@@ -3,7 +3,7 @@ import Encode
 
 
 def stego():
-    print("Hey,It's me parrot!!!")
+    
     Choice = int(input("Please choose your option!!! \n 1. Encrypt \n 2. Decrypt \n Enter your choice here : "))
     if Choice == 1:
         first = input("Enter the first image : ")
