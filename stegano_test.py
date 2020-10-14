@@ -36,18 +36,18 @@ def decode():
     cv2.imwrite('saved.png', saved2img)
 
 def stego():
-    print("Hey,It's me parrot!!!")
+    
     Choice = int(input("Please choose your option!!! \n 1. Encode \n 2. Decode \n Enter your choice here : "))
     if Choice == 1:
-        first = input("Enter the first image : ")
-        second = input("Enter the hidden image : ")
+        first = input("Enter the first image file : ")
+        second = input("Enter the image file for hide : ")
         encode(first, second)
-        print("Given image encrypted successfully and the image saved as hidden.png!!!")
+        print("Given image encoded successfully and saved as hidden.png!!!")
 
     elif Choice == 2:
         dec = input("Enter the image for decode : ")
         decode()
-        print("Your image decrypted successfully, the image encrypted from ", dec, " and saved as saved.png!!!")
+        print("Your image decoded successfully from ", dec, " and saved as saved.png!!!")
     else:
         raise ValueError("Input valid data")
 
