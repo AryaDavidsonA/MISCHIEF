@@ -9,7 +9,7 @@ def stego():
         first = input("Enter the first image file : ")
         second = input("Enter the image file for hide : ")
         Encode.encode(first, second)
-        print("Given image encoded successfully and the image saved as hidden.png!!!")
+        print("Given image encoded successfully and saved as hidden.png!!!")
 
     elif Choice == 2:
         dec = input("Enter the image for decode : ")
