@@ -15,10 +15,12 @@ pip3 install random
 2.Then you will get options like below.
   (Please choose your option!!! 
    1. Encode 
-   2. Decode 
-  Enter your choice here : )
+   2. Decode
+   
+    Enter your choice here : )
   
 3.If you choose the option 1, again you will get options like below.
+
   Enter your choice here : 1
   Enter the first image name : 1st_image.jpeg
   Enter the image name for hide : 2nd_image.jpeg
