@@ -7,8 +7,8 @@ def encode(first_image, second_image):
     width = 300
     height = 300
     area = (width, height)
-    im1 = cv2.resize(image1, area, cv2.INTER_AREA)
-    im2 = cv2.resize(image2, area, cv2.INTER_AREA)
+    im1 = cv2.resize(image1, area)
+    im2 = cv2.resize(image2, area)
     for val in range(width):
         for val_1 in range(height):
             for val_2 in range(3):
