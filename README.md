@@ -39,7 +39,7 @@ Here in this process ,the widely supported JPEG images are converted to PNG form
   
 6.Here, you can see image has been decoded and saved as 'saved.png'.
 
-7. You can check the files named 'hidden.png' and 'saved.png'.
+7.You can check the files named 'hidden.png' and 'saved.png'.
 
 
 ## Try with JPEG images.
