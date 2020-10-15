@@ -11,8 +11,8 @@ Here in this process ,the widely supported JPEG images are converted to PNG form
 
 ## Usage
 
-1.Execute the script should be like below. 
-     
+1.The script should execute as shown below.
+    
     python3 stegano_test.py
 
 2.Then you will get the options like below.
