@@ -25,3 +25,5 @@ def decode():
                 converted_bin_1 = bin_data_1[-4:] + chr(random.randint(0, 1) + 48) * 4
                 saved2img_1[val][val_1][val_2] = int(converted_bin_1, 2)
     cv2.imwrite('stego1.png', saved2img_1)
+    return img, img1
+
