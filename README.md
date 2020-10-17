@@ -11,35 +11,35 @@ Here in this process ,the widely supported JPEG images are converted to PNG form
 
 ## Usage
 
+I tried to encode 2 images at a time and it worked. Here, the process is  1st image hiding the 2nd image and 2nd image hiding the 3rd image.  If you want to know how it's ,then you can check below.
+
 1.The script should execute as shown below.
     
     python3 stegano_test.py
 
 2.Then you will get the options like below.
 
-    (Please choose your option!!! 
+    Please choose your option!!! 
     1. Encode    
     2. Decode
-    Enter your choice here : )
+    Enter your choice here : 
   
 3.If you choose the option 1, again you will get the options like below.
 
-    Enter your choice here : 1
-    Enter the first image file : 1st_image.jpeg
-    Enter the image file for hide : 2nd_image.jpeg
-    Given image encoded successfully and saved as hidden.png!!!
-  
-4.Here, you can see the image has been encoded and saved as 'hidden.png'.
+    Enter your first image : 
+    Enter your second image : 
+    Enter your third image : 
+    
+4.Here, you can see the image has been encoded and saved as 'hidden.png' and 'secret.png'.
 
 5.if you choose the option 2, again you will get the options like below.
 
-    Enter your choice here : 2
-    Enter the image for decode : hidden.png
-    Your image decoded successfully from hidden.png  and saved as saved.png!!!
+    Enter your image for decode :
+    Enter your image for decode :  
   
-6.Here, you can see image has been decoded and saved as 'saved.png'.
+6.Here, you can see image has been decoded and saved as 'stego.png' and 'stego1.png'.
 
-7.You can check the files named 'hidden.png' and 'saved.png'.
+7.You can check the image files named 'hidden.png','secret.png','stego.png' and 'stego1.png'.
 
 
 ## Try with JPEG images.
