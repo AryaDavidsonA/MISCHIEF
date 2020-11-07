@@ -46,7 +46,7 @@ print(figlet_format('LOKI SECRET', font='bubble'))
 def timming(sentence):
     for word in sentence:
         print(word, end='', flush=True)
-        timeout(0.099)
+        timeout(0.090)
     print()
 
 
