@@ -7,6 +7,8 @@ In my tool, Loki is trying to manipulate the user in the sense of helping the us
 
 ## Requirments
     pip3 install opencv-python
+    pip3 install random
+    pip3 install nmupy
     pip3 install pyfiglet
     pip3 install time
 (Install the above libraries for code execution.)
