@@ -31,5 +31,5 @@ Run
     python3 loki_secret.py
 # License
 AryaDavidsonA/LOKI_SECRET is licensed under the MIT License
-Copyright (c) 2020 AryaDavidsonA
+/Copyright (c) 2020 AryaDavidsonA
                                                                
