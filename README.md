@@ -32,3 +32,5 @@ Run
 # License
 AryaDavidsonA/LOKI_SECRET is licensed under the MIT License
 
+                                                               Copyright (c) 2020 AryaDavidsonA
+                                                               
