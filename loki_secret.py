@@ -69,7 +69,7 @@ if in_ == 'y':
     if in_1 == 'y':
         os.system('clear')
         print(figlet_format('LOKI SECRET', font='bubble'))
-        timming(" Oh, no no no!!!\n You need Heimdall's permission!!!")
+        timming(" Oh, no no no!!!\n You need Heimdall's permission!!!\n")
         timeout(2)
         timming(" >>> Type y/n to get the permission >>>")
         in_2 = input(" >>>> ")
