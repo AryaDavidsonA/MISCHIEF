@@ -13,37 +13,20 @@ In my tool, Loki is trying to manipulate the user in the sense of helping the us
     pip3 install time
 (Install the above libraries for code execution.)
 
-## Usage
-
-I tried to encode 2 images at a time and it worked. Here, the process is  1st image hiding the 2nd image and 2nd image hiding the 3rd image.  If you want to know how it's ,then you can check below.
-
-1.The script should execute as shown below.
-    
-    python3 stegano_test.py
-
-2.Then you will get the options like below.
-
-    Please choose your option!!! 
-    1. Encode    
-    2. Decode
-    Enter your choice here : 
-  
-3.If you choose the option 1, again you will get the options like below.
-
-    Enter your first image : 
-    Enter your second image : 
-    Enter your third image : 
-    
-4.Here, you can see the image has been encoded and saved as 'hidden.png' and 'secret.png'.
-
-5.if you choose the option 2, again you will get the options like below.
-
-    Enter your image for decode :
-    Enter your image for decode :  
-  
-6.Here, you can see image has been decoded and saved as 'stego.png' and 'stego1.png'.
-
-7.You can check the image files named 'hidden.png','secret.png','stego.png' and 'stego1.png'.
+# How to use it
+First unload and allow permisions.
 
 
-## Try with JPEG images.
+    cd LOKI_SECRET
+    chmod +x loki_secret.py
+
+If it does not work, try to install all the libraries that are located in the file requirements.txt
+
+    pip install -r requirements.txt
+
+RUN
+
+    ./loki_secret.py
+    OR
+    python3 loki_secret.py
+
