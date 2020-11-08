@@ -16,7 +16,7 @@ In my tool, Loki is trying to manipulate the user in the sense of helping the us
 # How to use it
 First unload and allow permisions.
 
-
+    git clone https://github.com/AryaDavidsonA/LOKI_SECRET.git
     cd LOKI_SECRET
     chmod +x loki_secret.py
 
