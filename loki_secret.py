@@ -62,7 +62,8 @@ if in_ == 'y':
     timming(" Just kiddin'!!!")
     timming(" No I mean it!!! hahahahaha")
     timeout(2)
-    timming(" If you are ready to come with me to Asgard")
+    timming(" If you want to hide your secret,\n you should come to Asgard with me!!!\n")
+    timming(" >>> If you are ready to come with me  >>>")
     timming(" >>> Please type y/n to the next step  >>>")
     in_1 = input(" >>>> ")
     if in_1 == 'y':
