@@ -22,11 +22,13 @@ First unload and allow permisions.
 
 If it does not work, try to install all the libraries that are located in the file requirements.txt
 
-    pip install -r requirements.txt
+    pip3 install -r requirements.txt
 
-RUN
+Run
 
     ./loki_secret.py
     OR
     python3 loki_secret.py
+# License
+AryaDavidsonA/LOKI_SECRET is licensed under the MIT License
 
