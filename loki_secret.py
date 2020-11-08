@@ -62,8 +62,6 @@ if in_ == 'y':
     timming(" Just kiddin'!!!")
     timming(" No I mean it!!! hahahahaha")
     timeout(2)
-    os.system('clear')
-    print(figlet_format('LOKI SECRET', font='bubble'))
     timming(" If you are ready to come with me to Asgard")
     timming(" >>> Please type y/n to the next step  >>>")
     in_1 = input(" >>>> ")
@@ -95,9 +93,9 @@ if in_ == 'y':
             timming(" Here,My thoughts entirely depends on the rest\n of the information you're about to give me!!! ")
             print()
             timeout(1)
-            Choice = input(" [1] Encode \n [2] Decode \n Enter your choice here : ")
+            timming(" [1] Encode \n [2] Decode \n")
+            Choice = input(" Enter your choice here : ")
             while True:
-
                 if Choice == '1':
                     os.system('clear')
                     print(figlet_format('LOKI ENCRYPTION', font='bubble'))
@@ -105,10 +103,8 @@ if in_ == 'y':
                         " Everything's a choice!!! Nobody's born good!!!\n Nobody's born evil!!! It's always a choice!!! ")
                     print()
                     timeout(1)
-                    Type = int(
-                        input(
-                            " [1] Hide single image  : \n [2] Hide double image  : \n [3] Hide camera image  : \n Enter your choice here : "))
-
+                    timming(" [1] Hide single image\n [2] Hide double image\n [3] Hide camera image\n")
+                    Type = int(input(" Enter your choice here : "))
                     if Type == 1:
                         os.system('clear')
                         print(figlet_format('LOKI ENCRYPTION', font='bubble'))
@@ -208,6 +204,7 @@ if in_ == 'y':
                                 converted_bin = bin_data[4:] + chr(random.randint(0, 1) + 48) * 4
                                 saved2img[value][value1][value2] = int(converted_bin, 2)
                     cv2.imwrite('king.png', saved2img)
+                    print()
 
                     timming(" Decoding=====            ||||")
                     timeout(1)
