@@ -72,9 +72,9 @@ if in_ == 'y':
             Choice = input(" Enter your choice here : ")
             
             def lsb():
-            area = (width, height)
-            im1 = cv2.resize(image1, area)
-            im2 = cv2.resize(image2, area)
+                area = (width, height)
+                im1 = cv2.resize(image1, area)
+                im2 = cv2.resize(image2, area)
                 for valu in range(height):
                     for valu1 in range(width):
                         for valu2 in range(3):
@@ -89,13 +89,13 @@ if in_ == 'y':
                 area = (width, height)
                 im2 = cv2.resize(image2, area)
                 im3 = cv2.resize(image3, area)
-                    for value in range(height):
-                        for value1 in range(width):
-                            for value2 in range(3):
-                                pixel2 = format(im2[value][value1][value2], '08b')
-                                pixel3 = format(im3[value][value1][value2], '08b')
-                                pix2 = pixel2[:4] + pixel3[:4]
-                                im2[value][value1][value2] = int(pix2, 2)
+                for value in range(height):
+                    for value1 in range(width):
+                        for value2 in range(3):
+                            pixel2 = format(im2[value][value1][value2], '08b')
+                            pixel3 = format(im3[value][value1][value2], '08b')
+                            pix2 = pixel2[:4] + pixel3[:4]
+                            im2[value][value1][value2] = int(pix2, 2)
                 cv2.imwrite('loki.png', im2)
                 
             while True:
