@@ -12,7 +12,7 @@ In my tool, Loki is trying to manipulate the user in the sense of helping the us
     pip3 install pyfiglet
     pip3 install time
 (Install the above libraries for code execution.)
- # vision.jpeg
+    vision.jpeg
 # How to use it
 First unload and allow permisions.
 
