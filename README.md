@@ -29,7 +29,7 @@ Run
     ./loki_secret.py
     OR
     python3 loki_secret.py
-# Try with JPEG image
+
 # License
 AryaDavidsonA/LOKI_SECRET is licensed under the MIT License
 /Copyright (c) 2020 AryaDavidsonA
