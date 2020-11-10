@@ -7,6 +7,23 @@ from pyfiglet import figlet_format
 from time import sleep as timeout
 
 
+
+
+def out():
+    timeout(1)
+    print()
+
+
+print(figlet_format('LOKI SECRET', font='bubble'))
+
+
+def timming(sentence):
+    for word in sentence:
+        print(word, end='', flush=True)
+        timeout(0.090)
+    print()
+
+    
 def lsb():
     area = (width, height)
     im1 = cv2.resize(image1, area)
@@ -33,22 +50,6 @@ def lsb1():
                 pix2 = pixel2[:4] + pixel3[:4]
                 im2[value][value1][value2] = int(pix2, 2)
     cv2.imwrite('loki.png', im2)
-
-
-def out():
-    timeout(1)
-    print()
-
-
-print(figlet_format('LOKI SECRET', font='bubble'))
-
-
-def timming(sentence):
-    for word in sentence:
-        print(word, end='', flush=True)
-        timeout(0.090)
-    print()
-
 
 timming(
     " Hello !!!\n You know it's a wonderful and tremendous\n idea,lets steal the biggest and the most\n obvious ship in the universe and escape\n in that.\n Remember me? I'm LOKI,Prince of Asgard!!\n And I am going to bless you to hide your\n secrets!!!! I am burdened with glorious\n purpose.")
