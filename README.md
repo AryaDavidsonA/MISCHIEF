@@ -5,7 +5,7 @@ Loki is a fictional character who appears in American comic books published by M
 
 In my tool, Loki is trying to manipulate the user in the sense of helping the user to hide their secret image within another image. With the help of Steganography, Loki uses the LSB concept for encoding and decoding the image. According to the concept of LSB, Loki tried to change the first bit of every pixel to hiding the secret image.
 
-## Requirments
+# Requirments
     pip3 install opencv-python
     pip3 install random
     pip3 install nmupy
