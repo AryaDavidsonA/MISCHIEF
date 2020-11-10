@@ -29,6 +29,10 @@ Run
     ./loki_secret.py
     OR
     python3 loki_secret.py
+    
+# Developer
+
+Arya Davidson A
 
 # License
 AryaDavidsonA/LOKI_SECRET is licensed under the MIT License
