@@ -23,33 +23,6 @@ def timming(sentence):
         timeout(0.090)
     print()
 
-    
-def lsb():
-    area = (width, height)
-    im1 = cv2.resize(image1, area)
-    im2 = cv2.resize(image2, area)
-    for valu in range(height):
-        for valu1 in range(width):
-            for valu2 in range(3):
-                pixel1 = format(im1[valu][valu1][valu2], '08b')
-                pixel2 = format(im2[valu][valu1][valu2], '08b')
-                pix1 = pixel1[:4] + pixel2[:4]
-                im1[valu][valu1][valu2] = int(pix1, 2)
-    cv2.imwrite('kneel.png', im1)
-
-
-def lsb1():
-    area = (width, height)
-    im2 = cv2.resize(image2, area)
-    im3 = cv2.resize(image3, area)
-    for value in range(height):
-        for value1 in range(width):
-            for value2 in range(3):
-                pixel2 = format(im2[value][value1][value2], '08b')
-                pixel3 = format(im3[value][value1][value2], '08b')
-                pix2 = pixel2[:4] + pixel3[:4]
-                im2[value][value1][value2] = int(pix2, 2)
-    cv2.imwrite('loki.png', im2)
 
 timming(
     " Hello !!!\n You know it's a wonderful and tremendous\n idea,lets steal the biggest and the most\n obvious ship in the universe and escape\n in that.\n Remember me? I'm LOKI,Prince of Asgard!!\n And I am going to bless you to hide your\n secrets!!!! I am burdened with glorious\n purpose.")
@@ -97,6 +70,34 @@ if in_ == 'y':
             timeout(1)
             timming(" [1] Encode \n [2] Decode \n")
             Choice = input(" Enter your choice here : ")
+            
+            def lsb():
+            area = (width, height)
+            im1 = cv2.resize(image1, area)
+            im2 = cv2.resize(image2, area)
+                for valu in range(height):
+                    for valu1 in range(width):
+                        for valu2 in range(3):
+                            pixel1 = format(im1[valu][valu1][valu2], '08b')
+                            pixel2 = format(im2[valu][valu1][valu2], '08b')
+                            pix1 = pixel1[:4] + pixel2[:4]
+                            im1[valu][valu1][valu2] = int(pix1, 2)
+                cv2.imwrite('kneel.png', im1)
+
+
+            def lsb1():
+                area = (width, height)
+                im2 = cv2.resize(image2, area)
+                im3 = cv2.resize(image3, area)
+                    for value in range(height):
+                        for value1 in range(width):
+                            for value2 in range(3):
+                                pixel2 = format(im2[value][value1][value2], '08b')
+                                pixel3 = format(im3[value][value1][value2], '08b')
+                                pix2 = pixel2[:4] + pixel3[:4]
+                                im2[value][value1][value2] = int(pix2, 2)
+                cv2.imwrite('loki.png', im2)
+                
             while True:
                 if Choice == '1':
                     os.system('clear')
