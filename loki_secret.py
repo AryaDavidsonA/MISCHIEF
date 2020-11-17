@@ -6,15 +6,19 @@ import sys
 import numpy as num
 from pyfiglet import figlet_format
 from time import sleep as timeout
+import tkinter.filedialog
 
 green = "\033[32m"
 blue = "\033[34m"
 red = "\033[31m"
 
+
 def restart():
     stego = sys.executable
     os.execl(stego, stego, *sys.argv)
     os.system('clear')
+
+
 def out():
     timeout(1)
     print()
@@ -26,55 +30,55 @@ print(blue + figlet_format('LOKI SECRET', font='bubble'))
 def timming(sentence):
     for word in sentence:
         print(word, end='', flush=True)
-        timeout(0.01)
+        timeout(0.090)
     print()
 
 
 print(red +
-    " Name        : Arya Davidson A.\n Course      : ADCD [Advanced Diploma in Cyber Defence]\n Institution : RedTeam Hacker Academy\n Github      : https://github.com/AryaDavidsonA\n LinkedIn    : https://www.linkedin.com/in/arya-davidson-a-0758581a6\n")
-next = input(blue + ' >>>> [ Please press enter to move forward] ')
+      " Name        : Arya Davidson A.\n Course      : ADCD [Advanced Diploma in Cyber Defence]\n Institution : RedTeam Hacker Academy\n Github      : https://github.com/AryaDavidsonA\n LinkedIn    : https://www.linkedin.com/in/arya-davidson-a-0758581a6\n")
+next = input(blue + ' >>>> [ Please press enter to move forward ] ')
 os.system("clear")
 
 print(red + figlet_format('LOKI SECRET', font='bubble'))
 timming(green +
-    " Hello !!!\n You know it's a wonderful and tremendous\n idea,lets steal the biggest and the most\n obvious ship in the universe and escape\n in that.\n Remember me? I'm LOKI,Prince of Asgard!!\n And I am going to bless you to hide your\n secrets!!!! I am burdened with glorious\n purpose.")
+        " Hello !!!\n You know it's a wonderful and tremendous\n idea,lets steal the biggest and the most\n obvious ship in the universe and escape\n in that.\n Remember me? I'm LOKI,Prince of Asgard!!\n And I am going to bless you to hide your\n secrets!!!! I am burdened with glorious\n purpose.")
 print()
-timming(red + " >>>> Type y/n to hide your secrets >>>>")
+timming(red + " >>>> [ Type y/n to hide your secrets ]")
 try:
     in_ = input(' >>>> ')
     if in_ == 'y':
         os.system('clear')
         print(red + figlet_format('LOKI SECRET', font='bubble'))
-        timming(green +" Keep calm and kneel down!!!")
+        timming(green + " Keep calm and kneel down!!!")
         timming(" Just kiddin'!!!")
         timming(" No I mean it!!! hahahahaha")
         timeout(2)
         timming(" If you want to hide your secret,\n you should come to Asgard with me!!!\n")
-        timming(red +" >>> If you are ready to come with me  >>>")
-        timming(" >>> Please type y/n to the next step  >>>")
+        timming(red + " >>>> [ If you are ready to come with me ]")
+        timming(" >>>> [ Please type y/n to the next step ]")
     elif in_ == 'n':
         print()
-        timming(red + "\n >> You lied to me!!! I'm impressed!!! >>")
+        timming(red + "\n >>>> [ You lied to me!!! I'm impressed!!! ]")
         out()
         os.system("clear")
         restart()
         if not in_:
             raise ValueError("Error! Empty String")
     else:
-        timming(red + "\n >> You lied to me!!! I'm impressed!!! >>")
+        timming(red + "\n >>>> [ You lied to me!!! I'm impressed!!! ]")
         os.system("clear")
         restart()
     try:
         in_1 = input(" >>>> ")
         if in_1 == 'y':
             os.system('clear')
-            print(red +figlet_format('LOKI SECRET', font='bubble'))
-            timming(green +" Oh, no no no!!!\n You need Heimdall's permission!!!\n")
+            print(red + figlet_format('LOKI SECRET', font='bubble'))
+            timming(green + " Oh, no no no!!!\n You need Heimdall's permission!!!\n")
             timeout(2)
-            timming(red +" >>> Type y/n to get the permission >>>")
+            timming(red + " >>>> [ Type y/n to get the permission ]")
         elif in_1 == 'n':
             print()
-            timming(red + "\n >> You lied to me!!! I'm impressed!!! >>")
+            timming(red + "\n >>>> [ You lied to me!!! I'm impressed!!! ]")
             out()
             os.system("clear")
             restart()
@@ -82,7 +86,7 @@ try:
                 raise ValueError("Error! Empty String")
             restart()
         else:
-            timming(red + "\n >> You lied to me!!! I'm impressed!!! >>")
+            timming(red + "\n >>>> [ You lied to me!!! I'm impressed!!! ]")
             os.system("clear")
             restart()
         try:
@@ -106,14 +110,14 @@ try:
                 os.system('clear')
             elif in_2 == 'n':
                 print()
-                timming(red + "\n >> You lied to me!!! I'm impressed!!! >>")
+                timming(red + "\n >>>> [ You lied to me!!! I'm impressed!!! ]")
                 out()
                 if not in_2:
                     raise ValueError("Error! Empty String")
                 os.system("clear")
                 restart()
             else:
-                timming(red + "\n >> You lied to me!!! I'm impressed!!! >>")
+                timming(red + "\n >>>> [ You lied to me!!! I'm impressed!!! ]")
                 os.system("clear")
                 restart()
 
@@ -148,7 +152,7 @@ try:
 
             print(red + figlet_format('WELCOME TO ASGARD', font='bubble'))
             timming(
-                green + " Here,My thoughts entirely depends on the rest\n of the information you're about to give me!!! ")
+                green + " Here,My thoughts entirely depends on the rest of the\n information you're about to give me!!! ")
             print()
             timeout(1)
             timming(" [1] Encode \n [2] Decode \n")
@@ -172,8 +176,20 @@ try:
                                 timming(
                                     green + " It's not how well you play the game,it's deciding what\n game you want to play!!! ")
                                 print()
-                                image1 = cv2.imread(input(" Enter the 1st image [cover image]  : "), 1)
-                                image2 = cv2.imread(input(" Enter the 2nd image [secret image] : "), 1)
+                                timming(green + " [ Please select the cover image from the directory!!! ]")
+                                timeout(2)
+
+                                filename = tkinter.filedialog.askopenfilename(
+                                    initialdir='/root', title='Select File',
+                                    filetypes=[("Jpeg", "*.jpeg"), ('Png Images', '*.png'), ("jpg", "*.jpg")])
+                                image1 = cv2.imread(filename, 1)
+
+                                timming(green + " [ Please select the secret image from the directory!!! ]")
+                                timeout(2)
+                                filename1 = tkinter.filedialog.askopenfilename(
+                                    initialdir='/root', title='Select File',
+                                    filetypes=[("Jpeg", "*.jpeg"), ('Png Images', '*.png'), ("jpg", "*.jpg")])
+                                image2 = cv2.imread(filename1, 1)
                                 width = image1.shape[1]
                                 height = image2.shape[0]
                                 lsb()
@@ -196,9 +212,24 @@ try:
                                 timming(
                                     green + " It's not how well you play the game,it's deciding what\n game you want to play!!! ")
                                 print()
-                                image1 = cv2.imread(input(" Enter the 1st image [1st cover image]       : "), 1)
-                                image2 = cv2.imread(input(" Enter the 2nd image [2nd cover/ 1st secret] : "), 1)
-                                image3 = cv2.imread(input(" Enter the 3rd image [2nd secret image]      : "), 1)
+                                timming(green + " [ Please select the cover image from the directory!!! ]")
+                                timeout(2)
+                                filename = tkinter.filedialog.askopenfilename(
+                                    initialdir='/root', title='Select File',
+                                    filetypes=[("Jpeg", "*.jpeg"), ('Png Images', '*.png'), ("jpg", "*.jpg")])
+                                image1 = cv2.imread(filename, 1)
+                                timming(green + " [ Please select the cover/secret image from the directory!!! ]")
+                                timeout(2)
+                                filename1 = tkinter.filedialog.askopenfilename(
+                                    initialdir='/root', title='Select File',
+                                    filetypes=[("Jpeg", "*.jpeg"), ('Png Images', '*.png'), ("jpg", "*.jpg")])
+                                image2 = cv2.imread(filename1, 1)
+                                timming(green + " [ Please select the secret image from the directory!!! ]")
+                                timeout(2)
+                                filename2 = tkinter.filedialog.askopenfilename(
+                                    initialdir='/root', title='Select File',
+                                    filetypes=[("Jpeg", "*.jpeg"), ('Png Images', '*.png'), ("jpg", "*.jpg")])
+                                image3 = cv2.imread(filename2, 1)
                                 width = image1.shape[1]
                                 height = image2.shape[0]
                                 lsb()
@@ -221,12 +252,17 @@ try:
                                 timming(
                                     green + " It's not how well you play the game,it's deciding what\n game you want to play!!! ")
                                 print()
-                                image1 = cv2.imread(input(" Enter the 1st image [cover image ] : "), 1)
+                                timming(green + " [ Please select the cover image from the directory!!! ]")
+                                timeout(2)
+                                filename = tkinter.filedialog.askopenfilename(
+                                    initialdir='/root', title='Select File',
+                                    filetypes=[("Jpeg", "*.jpeg"), ('Png Images', '*.png'), ("jpg", "*.jpg")])
+                                image1 = cv2.imread(filename, 1)
                                 camera = cv2.VideoCapture(0)
                                 ret, frame = camera.read()
                                 cv2.imwrite("evil.png", frame)
                                 cv2.destroyAllWindows()
-                                timming(" The 2nd image [camera image]       : You always evil.png!!!")
+                                timming(" [ The secret image [camera image] : You always evil.png!!! ]")
                                 image2 = cv2.imread('evil.png', 1)
                                 width = 750
                                 height = 750
@@ -245,12 +281,18 @@ try:
                                 break
                             elif Type >= 4:
                                 print()
-                                timming(red + " >> You lied to me!!! I'm impressed!!! >>")
+                                timming(red + " >>>> [ You lied to me!!! I'm impressed!!! ]")
                                 timeout(2)
                                 os.system("clear")
                                 restart()
                             elif Type == 0:
-                                timming(red + " >> You lied to me!!! I'm impressed!!! >>")
+                                timming(red + " >>>> [ You lied to me!!! I'm impressed!!! ]")
+                                timeout(2)
+                                os.system("clear")
+                                restart()
+
+                            else:
+                                timming(red + "\n >>>> [ You lied to me!!! I'm impressed!!! ]")
                                 timeout(2)
                                 os.system("clear")
                                 restart()
@@ -258,11 +300,8 @@ try:
                                     raise ValueError("Error! Empty String")
                                 os.system("clear")
                                 restart()
-                            else:
-                                timming(red + "\n >> You lied to me!!! I'm impressed!!! >>")
-                                os.system("clear")
-                                restart()
                         except ValueError:
+                            timming(red + "\n >>>> [ You lied to me!!! I'm impressed!!! ]")
                             os.system("clear")
                             restart()
                     elif Choice == '2':
@@ -270,7 +309,12 @@ try:
                         print(red + figlet_format('LOKI DECRYPTION', font='bubble'))
                         timming(green + " Hitting does not solve everything!!!")
                         print()
-                        img = cv2.imread(input(" Enter the image : "), 1)
+                        timming(green + " [ Please select the cover image from the directory!!! ]")
+                        timeout(2)
+                        filename = tkinter.filedialog.askopenfilename(
+                            initialdir='/root', title='Select File',
+                            filetypes=[('Png Images', '*.png'), ("Jpeg", "*.jpeg"), ("jpg", "*.jpg")])
+                        img = cv2.imread(filename, 1)
                         width, height = img.shape[0], img.shape[1]
 
                         saved2img = num.zeros((width, height, 3), num.uint8)
@@ -296,7 +340,7 @@ try:
                         break
                     elif Choice >= '3':
                         print()
-                        timming(red + " >> You lied to me!!! I'm impressed!!! >>")
+                        timming(red + " >>>> [ You lied to me!!! I'm impressed!!! ]")
                         out()
                         os.system("clear")
                         restart()
@@ -304,7 +348,7 @@ try:
 
                     elif Choice == '0':
                         print()
-                        timming(red + " >> You lied to me!!! I'm impressed!!! >>")
+                        timming(red + " >>>> [ You lied to me!!! I'm impressed!!! ]")
                         out()
                         os.system("clear")
                         restart()
@@ -313,7 +357,7 @@ try:
                             raise ValueError("Error! Empty String")
                         restart()
                     else:
-                        timming(red + "\n >> You lied to me!!! I'm impressed!!! >>")
+                        timming(red + "\n >>>> [ You lied to me!!! I'm impressed!!! ]")
                         os.system("clear")
                         restart()
 
