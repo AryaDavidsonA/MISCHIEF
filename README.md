@@ -11,6 +11,8 @@ In my tool, Loki is trying to manipulate the user in the sense of helping the us
     pip3 install nmupy
     pip3 install pyfiglet
     pip3 install time
+    pip3 install pyfiglet
+    pip3 install tkinter.filedialog
 (Install the above libraries for code execution.)
   
 # How to use it
