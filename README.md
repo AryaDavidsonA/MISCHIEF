@@ -19,8 +19,8 @@ In my tool, Loki is trying to manipulate the user in the sense of helping the us
 First unload and allow permisions.
 
     git clone https://github.com/AryaDavidsonA/MISCHIEF.git
-    cd LOKI_SECRET
-    chmod +x loki_secret.py
+    cd MISCHIEF
+    chmod +x mischief.py
 
 If it does not work, try to install all the libraries that are located in the file requirements.txt
 
@@ -28,11 +28,11 @@ If it does not work, try to install all the libraries that are located in the fi
 
 Run
 
-    ./loki_secret.py
+    ./mischief.py
     OR
-    python3 loki_secret.py
+    python3 mischief.py
 
 # License
-AryaDavidsonA/LOKI_SECRET is licensed under the MIT License
+AryaDavidsonA/MISCHIEF is licensed under the MIT License
 /Copyright (c) 2020 AryaDavidsonA
                                                                
