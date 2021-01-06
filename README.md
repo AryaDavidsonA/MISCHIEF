@@ -1,5 +1,5 @@
 # MISCHIEF
-I developed a tool with a steganographic technique for hiding secret data. And I’m naming this tool ‘LOKI_SECRET’. Also, I can tell you that you can use this tool for CTF purposes. Because here I borrow the concept of the fictional character ‘Loki’: The god of mischief and the skilled liar.
+I developed a tool with a steganographic technique for hiding secret data. And I’m naming this tool ‘MISCHIEF’. Also, I can tell you that you can use this tool for CTF purposes. Because here I borrow the concept of the fictional character ‘Loki’: The god of mischief and the skilled liar.
 
 Loki is a fictional character who appears in American comic books published by Marvel Comics. Based on the Norse goddess, the character is the Asgardian "God of Mischief", Odd's adopted child, the brother of superhero Thor and later Angela. Loki is portrayed as a supervillain and antihero. This character is often portrayed strictly as a man, but in some cases shows gender.
 
@@ -18,7 +18,7 @@ In my tool, Loki is trying to manipulate the user in the sense of helping the us
 # How to use it
 First unload and allow permisions.
 
-    git clone https://github.com/AryaDavidsonA/LOKI_SECRET.git
+    git clone https://github.com/AryaDavidsonA/MISCHIEF.git
     cd LOKI_SECRET
     chmod +x loki_secret.py
 
