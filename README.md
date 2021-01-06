@@ -1,4 +1,4 @@
-# LOKI_SECRET
+# MISCHIEF
 I developed a tool with a steganographic technique for hiding secret data. And I’m naming this tool ‘LOKI_SECRET’. Also, I can tell you that you can use this tool for CTF purposes. Because here I borrow the concept of the fictional character ‘Loki’: The god of mischief and the skilled liar.
 
 Loki is a fictional character who appears in American comic books published by Marvel Comics. Based on the Norse goddess, the character is the Asgardian "God of Mischief", Odd's adopted child, the brother of superhero Thor and later Angela. Loki is portrayed as a supervillain and antihero. This character is often portrayed strictly as a man, but in some cases shows gender.
