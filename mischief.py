@@ -24,7 +24,7 @@ def out():
     print()
 
 
-print(blue + figlet_format('LOKI SECRET', font='bubble'))
+print(blue + figlet_format('MISCHIEF', font='bubble'))
 
 
 def timming(sentence):
@@ -39,7 +39,7 @@ print(red +
 next = input(blue + ' >>>> [ Please press enter to move forward ] ')
 os.system("clear")
 
-print(red + figlet_format('LOKI SECRET', font='bubble'))
+print(red + figlet_format('MISCHIEF', font='bubble'))
 timming(green +
         " Hello !!!\n You know it's a wonderful and tremendous\n idea,lets steal the biggest and the most\n obvious ship in the universe and escape\n in that.\n Remember me? I'm LOKI,Prince of Asgard!!\n And I am going to bless you to hide your\n secrets!!!! I am burdened with glorious\n purpose.")
 print()
@@ -72,7 +72,7 @@ try:
         in_1 = input(" >>>> ")
         if in_1 == 'y':
             os.system('clear')
-            print(red + figlet_format('LOKI SECRET', font='bubble'))
+            print(red + figlet_format('MISCHIEF', font='bubble'))
             timming(green + " Oh, no no no!!!\n You need Heimdall's permission!!!\n")
             timeout(2)
             timming(red + " >>>> [ Type y/n to get the permission ]")
@@ -161,7 +161,7 @@ try:
                     Choice = input(" Enter your choice here : ")
                     if Choice == '1':
                         os.system('clear')
-                        print(red + figlet_format('LOKI ENCRYPTION', font='bubble'))
+                        print(red + figlet_format('MISCHIEF ENCRYPTION', font='bubble'))
                         timming(green +
                                 " Everything's a choice!!! Nobody's born good!!!\n Nobody's born evil!!! It's always a choice!!! ")
                         print()
@@ -171,7 +171,7 @@ try:
                             Type = int(input(" Enter your choice here : "))
                             if Type == 1:
                                 os.system('clear')
-                                print(red + figlet_format('LOKI ENCRYPTION', font='bubble'))
+                                print(red + figlet_format('MISCHIEF ENCRYPTION', font='bubble'))
                                 timeout(1)
                                 timming(
                                     green + " It's not how well you play the game,it's deciding what\n game you want to play!!! ")
@@ -180,14 +180,14 @@ try:
                                 timeout(2)
 
                                 filename = tkinter.filedialog.askopenfilename(
-                                    initialdir='/root', title='Select File',
+                                    initialdir='/root', title='ENCRYPTION',
                                     filetypes=[("Jpeg", "*.jpeg"), ('Png Images', '*.png'), ("jpg", "*.jpg")])
                                 image1 = cv2.imread(filename, 1)
 
                                 timming(green + " [ Please select the secret image from the directory!!! ]")
                                 timeout(2)
                                 filename1 = tkinter.filedialog.askopenfilename(
-                                    initialdir='/root', title='Select File',
+                                    initialdir='/root', title='ENCRYPTION',
                                     filetypes=[("Jpeg", "*.jpeg"), ('Png Images', '*.png'), ("jpg", "*.jpg")])
                                 image2 = cv2.imread(filename1, 1)
                                 width = image1.shape[1]
@@ -208,26 +208,26 @@ try:
 
                             elif Type == 2:
                                 os.system('clear')
-                                print(red + figlet_format('LOKI ENCRYPTION', font='bubble'))
+                                print(red + figlet_format('MISCHIEF ENCRYPTION', font='bubble'))
                                 timming(
                                     green + " It's not how well you play the game,it's deciding what\n game you want to play!!! ")
                                 print()
                                 timming(green + " [ Please select the cover image from the directory!!! ]")
                                 timeout(2)
                                 filename = tkinter.filedialog.askopenfilename(
-                                    initialdir='/root', title='Select File',
+                                    initialdir='/root', title='ENCRYPTION',
                                     filetypes=[("Jpeg", "*.jpeg"), ('Png Images', '*.png'), ("jpg", "*.jpg")])
                                 image1 = cv2.imread(filename, 1)
                                 timming(green + " [ Please select the cover/secret image from the directory!!! ]")
                                 timeout(2)
                                 filename1 = tkinter.filedialog.askopenfilename(
-                                    initialdir='/root', title='Select File',
+                                    initialdir='/root', title='ENCRYPTION',
                                     filetypes=[("Jpeg", "*.jpeg"), ('Png Images', '*.png'), ("jpg", "*.jpg")])
                                 image2 = cv2.imread(filename1, 1)
                                 timming(green + " [ Please select the secret image from the directory!!! ]")
                                 timeout(2)
                                 filename2 = tkinter.filedialog.askopenfilename(
-                                    initialdir='/root', title='Select File',
+                                    initialdir='/root', title='ENCRYPTION',
                                     filetypes=[("Jpeg", "*.jpeg"), ('Png Images', '*.png'), ("jpg", "*.jpg")])
                                 image3 = cv2.imread(filename2, 1)
                                 width = image1.shape[1]
@@ -248,14 +248,14 @@ try:
                                 break
                             elif Type == 3:
                                 os.system('clear')
-                                print(red + figlet_format('LOKI ENCRYPTION', font='bubble'))
+                                print(red + figlet_format('MISCHIEF ENCRYPTION', font='bubble'))
                                 timming(
                                     green + " It's not how well you play the game,it's deciding what\n game you want to play!!! ")
                                 print()
                                 timming(green + " [ Please select the cover image from the directory!!! ]")
                                 timeout(2)
                                 filename = tkinter.filedialog.askopenfilename(
-                                    initialdir='/root', title='Select File',
+                                    initialdir='/root', title='ENCRYPTION',
                                     filetypes=[("Jpeg", "*.jpeg"), ('Png Images', '*.png'), ("jpg", "*.jpg")])
                                 image1 = cv2.imread(filename, 1)
                                 camera = cv2.VideoCapture(0)
@@ -306,13 +306,13 @@ try:
                             restart()
                     elif Choice == '2':
                         os.system('clear')
-                        print(red + figlet_format('LOKI DECRYPTION', font='bubble'))
+                        print(red + figlet_format('MISCHIEF DECRYPTION', font='bubble'))
                         timming(green + " Hitting does not solve everything!!!")
                         print()
                         timming(green + " [ Please select the cover image from the directory!!! ]")
                         timeout(2)
                         filename = tkinter.filedialog.askopenfilename(
-                            initialdir='/root', title='Select File',
+                            initialdir='/root', title='DECRYPTION',
                             filetypes=[('Png Images', '*.png'), ("Jpeg", "*.jpeg"), ("jpg", "*.jpg")])
                         img = cv2.imread(filename, 1)
                         width, height = img.shape[0], img.shape[1]
